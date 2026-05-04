@@ -6,7 +6,7 @@ export const dataContext = createContext()
 function UserContext({ children }) {
   let [userData, setUserData] = useState(null)
   let [loading, setLoading] = useState(true) // 1. Loading state add ki
-  const serverURL = "http://localhost:8000"
+  const serverURL = "https://mern-auth-backend-e79u.onrender.com"
 
   const getUserData = async () => {
     try {
