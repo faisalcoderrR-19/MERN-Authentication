@@ -3,7 +3,8 @@ import multer from "multer"
 
 const storage = multer.diskStorage({
     destination:(req,path,cb)=>{
-        cb(null,"./public")
+        // cb(null,"./public")
+        cb(null, "/tmp")
     },
     filename:(req,file,cb)=>{
         console.log(file);
